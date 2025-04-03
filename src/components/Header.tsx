@@ -21,7 +21,7 @@ const Header = () => {
             <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM5 5H19V11H5V5ZM5 19V13H9V19H5ZM19 19H11V13H19V19Z" fill="white"/>
           </svg>
         </div>
-        <h1 className="text-xl md:text-2xl font-semibold tracking-tight">WebP Embedder</h1>
+        <h1 className="text-xl md:text-2xl font-semibold tracking-tight">CyRushMF69 dai ko photo to html tool</h1>
       </motion.div>
       
       <motion.div 

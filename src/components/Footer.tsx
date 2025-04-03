@@ -22,12 +22,12 @@ const Footer = () => {
                   <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM5 5H19V11H5V5ZM5 19V13H9V19H5ZM19 19H11V13H19V19Z" fill="white"/>
                 </svg>
               </div>
-              <p className="text-sm font-medium">WebP Embedder</p>
+              <p className="text-sm font-medium">CyRushMF69 dai ko photo to html tool</p>
             </div>
           </div>
           
           <div className="text-sm text-muted-foreground">
-            © {currentYear} WebP Embedder. All rights reserved.
+            © {currentYear} CyRushMF69 dai ko photo to html tool. All rights reserved.
           </div>
           
           <div className="flex space-x-6 mt-4 md:mt-0">
