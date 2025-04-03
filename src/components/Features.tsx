@@ -2,27 +2,32 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Code, Zap, Lock, Globe } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const featureItems = [
   {
     icon: <Zap className="w-5 h-5" />,
     title: "Fast Processing",
-    description: "Process WebP images instantly with zero server latency"
+    description: "Process WebP images instantly with zero server latency",
+    path: "/fast-processing"
   },
   {
     icon: <Lock className="w-5 h-5" />,
     title: "Secure",
-    description: "Files never leave your browser, ensuring complete privacy"
+    description: "Files never leave your browser, ensuring complete privacy",
+    path: "/security"
   },
   {
     icon: <Code className="w-5 h-5" />,
     title: "Clean Code",
-    description: "Get clean, ready-to-use HTML code for easy implementation"
+    description: "Get clean, ready-to-use HTML code for easy implementation",
+    path: "/clean-code"
   },
   {
     icon: <Globe className="w-5 h-5" />,
     title: "Browser Support",
-    description: "Works with all modern browsers that support WebP format"
+    description: "Works with all modern browsers that support WebP format",
+    path: "/browser-support"
   }
 ];
 
@@ -43,8 +48,10 @@ const item = {
 };
 
 const Features = () => {
+  const navigate = useNavigate();
+
   return (
-    <section className="py-20 px-4 w-full max-w-6xl mx-auto">
+    <section className="py-20 px-4 w-full max-w-6xl mx-auto" id="features">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -75,7 +82,10 @@ const Features = () => {
           <motion.div
             key={index}
             variants={item}
-            className="glass-panel rounded-xl p-6 group hover:shadow-md transition-all duration-300"
+            className="glass-panel rounded-xl p-6 group hover:shadow-md transition-all duration-300 cursor-pointer"
+            onClick={() => navigate(feature.path)}
+            whileHover={{ y: -5 }}
+            whileTap={{ scale: 0.98 }}
           >
             <div className="w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-all duration-300">
               {feature.icon}
